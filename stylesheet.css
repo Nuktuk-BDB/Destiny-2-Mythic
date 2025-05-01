@@ -1,0 +1,78 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  background-color: #1a1a20;
+  color: #eee;
+  font-family: Inter, Helvetica, sans-serif;
+}
+
+h1 {
+  padding: 8px 0px;
+}
+
+a {
+  font-size: 14px;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+}
+
+.faqWrapper {
+  padding: 16px;
+  max-width: 720px;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #1f1f2a;
+  color: #eee;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #17171f;
+}
+
+.accordion:after {
+  content: "+"; 
+  font-size: 24px;
+  color: #eee;
+  float: right;
+  margin-left: 5px;
+  text-align: center;
+}
+
+.active:after {
+  content: "-";
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 16px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.panelText {
+  padding: 16px 0px;
+  font-size: 14px;
+}
+
+.listTitle {
+  padding: 8px 0px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
