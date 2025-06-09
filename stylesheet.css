@@ -7,7 +7,7 @@
 }
 
 h1 {
-  padding: 8px 0px;
+  padding: 16px 0px;
 }
 
 h2 {
@@ -47,8 +47,10 @@ a {
 
 .container {
   display: flex;
-  width: 100vw;
+  flex-direction: column;
+  width: 100lvw;
   justify-content: center;
+  align-items: center;
 }
 
 .wrapper {
@@ -118,7 +120,43 @@ a {
 }
 
 .listTitle {
+  display: flex;
   padding: 8px 0px;
+  font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
+  align-items: center;
+}
+
+.icon {
+  margin: 8px;
+}
+
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
+
+.heroVideo {
+  width: 60lvw;
+  height: 60lvh;
+}
+
+.rowContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 16px 0px;
+  width: 60lvw;
+  justify-content: space-evenly;
+}
+
+.videoItemContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.listVideo {
+  width: 19lvw;
+  height: 19lvh;
 }
