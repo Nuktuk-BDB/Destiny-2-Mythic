@@ -20,6 +20,8 @@ a {
 
 /* Add a black background color to the top navigation */
 .topnav {
+  position: sticky;
+  top: 0;
   background-color: #17171f;
   overflow: hidden;
 }
@@ -27,6 +29,7 @@ a {
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
+  display: block;
   color: #eee;
   text-align: center;
   padding: 14px 16px;
