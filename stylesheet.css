@@ -1,9 +1,15 @@
 * {
   margin: 0px;
   padding: 0px;
-  background-color: #1a1a20;
   color: #eee;
   font-family: Inter, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #1a1a20;
+  background-image: url(images/UI_Loading_BlueDisc_Lg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1 {
@@ -35,11 +41,12 @@ a {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 20px;
+  transition: 0.4s;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #17171f;
+  background-color: #2a2a3d;
   color: #eee;
 }
 
@@ -54,6 +61,44 @@ a {
   width: 100lvw;
   justify-content: center;
   align-items: center;
+}
+
+.containerH {
+  display: flex;
+  flex-direction: row;
+  width: 100lvw;
+  justify-content: left;
+  align-items: center;
+}
+
+.scroll-container {
+  background-color: #17171f;
+  overflow: auto;
+  white-space: nowrap;
+  width: 60lvw;
+}
+
+.scroll-container iframe {
+  border: none;
+  padding: 16px;
+}
+
+.singleCol {
+  display: flex;
+  flex-direction: column;
+  width: 60lvw;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  margin: 24px;
+  padding: 16px;
+  width: 100%;
+  background-color: #17171f;
+  justify-content: left;
 }
 
 .wrapper {
@@ -84,6 +129,8 @@ a {
   padding: 18px;
   width: 100%;
   text-align: left;
+  align-items: center;
+  justify-content: space-between;
   font-size: 16px;
   font-weight: bold;
   border: none;
@@ -160,6 +207,6 @@ a {
 }
 
 .listVideo {
-  width: 19lvw;
-  height: 19lvh;
+  width: 30lvw;
+  height: 30lvh;
 }
