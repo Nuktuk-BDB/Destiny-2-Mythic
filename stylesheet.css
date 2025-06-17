@@ -79,8 +79,11 @@ a {
 }
 
 .scroll-container iframe {
-  border: none;
-  padding: 16px;
+  border: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 1;
+  margin: 8px;
 }
 
 .singleCol {
@@ -103,7 +106,7 @@ a {
 
 .wrapper {
   padding: 16px;
-  max-width: 720px;
+  width: 60lvw;
 }
 
 .clanWrapper {
