@@ -210,6 +210,13 @@ a {
 }
 
 .listVideo {
-  width: 30lvw;
-  height: 30lvh;
+  width: 480px;
+  height: 270px;
+}
+
+@media screen and (max-width: 480px) {
+  .listVideo {
+    width: 320px;
+    height: 180px;
+  }
 }
