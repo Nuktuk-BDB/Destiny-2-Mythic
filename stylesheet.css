@@ -5,216 +5,428 @@
   font-family: Inter, Helvetica, sans-serif;
 }
 
-body {
-  background-color: #1a1a20;
-  background-image: url(images/UI_Loading_BlueDisc_Lg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+@media screen and (min-width: 600px) {
+  body {
+    background-color: #1a1a20;
+    background-image: url(images/UI_Loading_BlueDisc_Lg.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: initial;
+  }
+
+  h1 {
+    padding: 16px 0px;
+  }
+
+  h2 {
+    padding: 8px 0px;
+  }
+
+  a {
+    font-size: 14px;
+  }
+
+  /* Add a black background color to the top navigation */
+  .topnav {
+    position: sticky;
+    top: 0;
+    background-color: #17171f;
+    overflow: hidden;
+  }
+
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #eee;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.4s;
+  }
+
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #2a2a3d;
+    color: #eee;
+  }
+
+  /* Add a color to the active/current link */
+  .topnav a.selected {
+    background-color: #1f1f2a;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100lvw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .containerH {
+    display: flex;
+    flex-direction: row;
+    width: 100lvw;
+    justify-content: left;
+    align-items: center;
+  }
+
+  .scroll-container {
+    background-color: #17171f;
+    overflow: auto;
+    white-space: nowrap;
+    width: 60lvw;
+  }
+
+  .scroll-container iframe {
+    border: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 1;
+    margin: 8px;
+  }
+
+  .singleCol {
+    display: flex;
+    flex-direction: column;
+    width: 60lvw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    margin: 24px;
+    padding: 16px;
+    width: 100%;
+    background-color: #17171f;
+    justify-content: left;
+  }
+
+  .wrapper {
+    padding: 16px;
+    width: 60lvw;
+  }
+
+  .clanWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60lvw;
+  }
+
+  .clanImg {
+    width: 50%;
+    height: 50%;
+  }
+
+  .clanDetails {
+    padding: 0 16px;
+    width: 50%;
+  }
+
+  /* Style the buttons that are used to open and close the accordion panel */
+  .accordion {
+    background-color: #1f1f2a;
+    color: #eee;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #17171f;
+  }
+
+  .accordion:after {
+    content: "+"; 
+    font-size: 24px;
+    color: #eee;
+    float: right;
+    margin-left: 5px;
+    text-align: center;
+  }
+
+  .active:after {
+    content: "-";
+  }
+
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 16px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .panelText {
+    padding: 16px 0px;
+    font-size: 14px;
+  }
+
+  .listTitle {
+    display: flex;
+    padding: 8px 0px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    align-items: center;
+  }
+
+  .icon {
+    margin: 8px;
+  }
+
+  .heroContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+  }
+
+  .heroVideo {
+    width: 60lvw;
+    height: 60lvh;
+  }
+
+  .rowContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 16px 0px;
+    width: 60lvw;
+    justify-content: space-evenly;
+  }
+
+  .videoItemContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .listVideo {
+    width: 480px;
+    height: 270px;
+  }
 }
 
-h1 {
-  padding: 16px 0px;
-}
+@media screen and (max-width: 600px) {
+  body {
+    background-color: #1a1a20;
+    background-image: url(images/UI_Loading_BlueDisc_Lg.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100lvw auto;
+  }
 
-h2 {
-  padding: 8px 0px;
-}
+  h1 {
+    padding: 16px 0px;
+  }
 
-a {
-  font-size: 14px;
-}
+  h2 {
+    padding: 8px 0px;
+  }
 
-/* Add a black background color to the top navigation */
-.topnav {
-  position: sticky;
-  top: 0;
-  background-color: #17171f;
-  overflow: hidden;
-}
+  a {
+    font-size: 14px;
+  }
 
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  display: block;
-  color: #eee;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  transition: 0.4s;
-}
+  /* Add a black background color to the top navigation */
+  .topnav {
+    position: sticky;
+    top: 0;
+    background-color: #17171f;
+    overflow: hidden;
+  }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #2a2a3d;
-  color: #eee;
-}
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #eee;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.4s;
+  }
 
-/* Add a color to the active/current link */
-.topnav a.selected {
-  background-color: #1f1f2a;
-}
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #2a2a3d;
+    color: #eee;
+  }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  width: 100lvw;
-  justify-content: center;
-  align-items: center;
-}
+  /* Add a color to the active/current link */
+  .topnav a.selected {
+    background-color: #1f1f2a;
+  }
 
-.containerH {
-  display: flex;
-  flex-direction: row;
-  width: 100lvw;
-  justify-content: left;
-  align-items: center;
-}
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100lvw;
+    justify-content: center;
+    align-items: center;
+  }
 
-.scroll-container {
-  background-color: #17171f;
-  overflow: auto;
-  white-space: nowrap;
-  width: 60lvw;
-}
+  .containerH {
+    display: flex;
+    flex-direction: row;
+    width: 100lvw;
+    justify-content: left;
+    align-items: center;
+  }
 
-.scroll-container iframe {
-  border: hidden;
-  border-radius: 10px;
-  overflow: hidden;
-  z-index: 1;
-  margin: 8px;
-}
+  .scroll-container {
+    background-color: #17171f;
+    overflow: auto;
+    white-space: nowrap;
+    width: 100%;
+  }
 
-.singleCol {
-  display: flex;
-  flex-direction: column;
-  width: 60lvw;
-  justify-content: center;
-  align-items: center;
-}
+  .scroll-container iframe {
+    border: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 1;
+    margin: 8px;
+  }
 
-.section {
-  display: flex;
-  flex-direction: column;
-  margin: 24px;
-  padding: 16px;
-  width: 100%;
-  background-color: #17171f;
-  justify-content: left;
-}
+  .singleCol {
+    display: flex;
+    flex-direction: column;
+    width: 80lvw;
+    justify-content: center;
+    align-items: center;
+  }
 
-.wrapper {
-  padding: 16px;
-  width: 60lvw;
-}
+  .section {
+    display: flex;
+    flex-direction: column;
+    margin: 24px;
+    padding: 16px;
+    width: 100%;
+    background-color: #17171f;
+    justify-content: left;
+  }
 
-.clanWrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
+  .wrapper {
+    padding: 16px;
+    width: 80lvw;
+  }
 
-.clanImg {
-  width: 50%;
-}
+  .clanWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80lvw;
+  }
 
-.clanDetails {
-  padding: 0 16px;
-  width: 50%;
-}
+  .clanImg {
+    width: 50%;
+    height: 50%;
+  }
 
-/* Style the buttons that are used to open and close the accordion panel */
-.accordion {
-  background-color: #1f1f2a;
-  color: #eee;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 16px;
-  font-weight: bold;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-}
+  .clanDetails {
+    padding: 0 16px;
+    width: 50%;
+  }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-  background-color: #17171f;
-}
+  /* Style the buttons that are used to open and close the accordion panel */
+  .accordion {
+    background-color: #1f1f2a;
+    color: #eee;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
 
-.accordion:after {
-  content: "+"; 
-  font-size: 24px;
-  color: #eee;
-  float: right;
-  margin-left: 5px;
-  text-align: center;
-}
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #17171f;
+  }
 
-.active:after {
-  content: "-";
-}
+  .accordion:after {
+    content: "+"; 
+    font-size: 24px;
+    color: #eee;
+    float: right;
+    margin-left: 5px;
+    text-align: center;
+  }
 
-/* Style the accordion panel. Note: hidden by default */
-.panel {
-  padding: 0 16px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
+  .active:after {
+    content: "-";
+  }
 
-.panelText {
-  padding: 16px 0px;
-  font-size: 14px;
-}
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 16px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
 
-.listTitle {
-  display: flex;
-  padding: 8px 0px;
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-  align-items: center;
-}
+  .panelText {
+    padding: 16px 0px;
+    font-size: 14px;
+  }
 
-.icon {
-  margin: 8px;
-}
+  .listTitle {
+    display: flex;
+    padding: 8px 0px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    align-items: center;
+  }
 
-.heroContainer {
-  display: flex;
-  flex-direction: column;
-  margin: 0px;
-}
+  .icon {
+    margin: 8px;
+  }
 
-.heroVideo {
-  width: 60lvw;
-  height: 60lvh;
-}
+  .heroContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+  }
 
-.rowContainer {
-  display: flex;
-  flex-direction: row;
-  margin: 16px 0px;
-  width: 60lvw;
-  justify-content: space-evenly;
-}
+  .heroVideo {
+    width: 60lvw;
+    height: 60lvh;
+  }
 
-.videoItemContainer {
-  display: flex;
-  flex-direction: column;
-}
+  .rowContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 16px 0px;
+    width: 60lvw;
+    justify-content: space-evenly;
+  }
 
-.listVideo {
-  width: 480px;
-  height: 270px;
-}
+  .videoItemContainer {
+    display: flex;
+    flex-direction: column;
+  }
 
-@media screen and (max-width: 480px) {
   .listVideo {
     width: 320px;
     height: 180px;
