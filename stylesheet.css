@@ -6,27 +6,181 @@
 }
 
 @media screen and (min-width: 600px) {
+  
+  /* HTML tags */
   body {
     background-color: #1a1a20;
     background-image: url(images/UI_Loading_BlueDisc_Lg.png);
     background-repeat: no-repeat;
     background-position: top;
     background-size: initial;
+    overflow: auto;
   }
 
   h1 {
-    padding: 16px 0px;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0.67em 0;
   }
 
   h2 {
-    padding: 8px 0px;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0.75em 0;
+  }
+
+  h3 {
+    font-size: 1.17em;
+    font-weight: bold;
+    margin: 0.83em 0;
+  }
+
+  h4 {
+    font-size: 1em;
+    font-weight: bold;
+    margin: 1.12em 0;
+  }
+
+  h5 {
+    font-size: 0.83em;
+    font-weight: bold;
+    margin: 1.5em 0;
+  }
+
+  h6 {
+    font-size: 0.75em;
+    font-weight: bold;
+    margin: 1.67em 0;
+  }
+
+  .subtitle {
+    opacity: 75%;
   }
 
   a {
-    font-size: 14px;
+    color: #eee;
+    padding: 14px 16px;
+    font-size: 16px;
   }
 
-  /* Add a black background color to the top navigation */
+  p {
+    color: #eee;
+    font-size: 16px;
+  }
+
+  .button {
+    background-color: #1f1f2a;
+    border: none;
+    border-radius: 8px;
+    color: #eee;
+    padding: 12px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .button:hover {
+    background-color: #2a2a3d;
+    border: none;
+    border-radius: 8px;
+    color: #eee;
+    padding: 12px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .buttonInline {
+    background-color: #1f1f2a;
+    border: none;
+    border-radius: 8px;
+    color: #eee;
+    padding: 6px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .buttonInline:hover {
+    background-color: #2a2a3d;
+    border: none;
+    border-radius: 8px;
+    color: #eee;
+    padding: 6px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .buttonYT {
+    background-color: #ff0000;
+    border: none;
+    border-radius: 8px;
+    color: #eee;
+    padding: 6px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .buttonYT:hover {
+    background-color: #ff3333;
+    border: none;
+    border-radius: 8px;
+    color: #eee;
+    padding: 6px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .buttonTwitch {
+    background-color: #8000ff;
+    border: none;
+    border-radius: 8px;
+    color: #eee;
+    padding: 6px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .buttonTwitch:hover {
+    background-color: #9933ff;
+    border: none;
+    border-radius: 8px;
+    color: #eee;
+    padding: 6px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  /* Topnav Elements */
   .topnav {
     position: sticky;
     top: 0;
@@ -34,7 +188,6 @@
     overflow: hidden;
   }
 
-  /* Style the links inside the navigation bar */
   .topnav a {
     float: left;
     display: block;
@@ -46,52 +199,37 @@
     transition: 0.4s;
   }
 
-  /* Change the color of links on hover */
   .topnav a:hover {
     background-color: #2a2a3d;
     color: #eee;
   }
 
-  /* Add a color to the active/current link */
   .topnav a.selected {
     background-color: #1f1f2a;
   }
 
+  /* Flexbox Containers */
   .container {
     display: flex;
     flex-direction: column;
     width: 100lvw;
-    justify-content: center;
+    justify-content: top;
     align-items: center;
   }
 
-  .containerH {
+  .heroContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100lvw;
+    justify-content: top;
+    align-items: center;
+    padding: 64px 120px;
+  }
+
+  .pageTitle {
     display: flex;
     flex-direction: row;
     width: 100lvw;
-    justify-content: left;
-    align-items: center;
-  }
-
-  .scroll-container {
-    background-color: #17171f;
-    overflow: auto;
-    white-space: nowrap;
-    width: 60lvw;
-  }
-
-  .scroll-container iframe {
-    border: hidden;
-    border-radius: 10px;
-    overflow: hidden;
-    z-index: 1;
-    margin: 8px;
-  }
-
-  .singleCol {
-    display: flex;
-    flex-direction: column;
-    width: 60lvw;
     justify-content: center;
     align-items: center;
   }
@@ -99,11 +237,54 @@
   .section {
     display: flex;
     flex-direction: column;
-    margin: 24px;
-    padding: 16px;
-    width: 100%;
+    width: 100lvw;
     background-color: #17171f;
-    justify-content: left;
+    justify-content: top;
+    align-items: center;
+  }
+
+  .heroVideoSection {
+    display: flex;
+    flex-direction: column;
+    width: 100lvw;
+    justify-content: top;
+    align-items: center;
+    padding: 0px 0px 40px;
+  }
+
+  .sectionHeader {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 18px;
+    width: 90lvw;
+    align-items: left;
+  }
+
+  /* Components */
+  .scroll-container {
+    background-color: #17171f;
+    overflow: auto;
+    white-space: nowrap;
+    width: 90lvw;
+    scrollbar-color: #17171f;
+  }
+
+  .scroll-container iframe {
+    border: hidden;
+    border-radius: 10px;
+    z-index: 1;
+    margin: 0px 8px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .heroVideo {
+    width: 90lvw;
+    height: 50.625lvw;
+    border: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 0;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
   }
 
   .wrapper {
@@ -114,13 +295,14 @@
   .clanWrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 60lvw;
+    justify-content: center;
+    width: 80lvw;
   }
 
   .clanImg {
-    width: 50%;
+    width: 30%;
     height: 50%;
+    margin: 8px;
   }
 
   .clanDetails {
@@ -130,7 +312,7 @@
 
   /* Style the buttons that are used to open and close the accordion panel */
   .accordion {
-    background-color: #1f1f2a;
+    background-color: #17171f;
     color: #eee;
     cursor: pointer;
     padding: 18px;
@@ -147,7 +329,7 @@
 
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .accordion:hover {
-    background-color: #17171f;
+    background-color: #1f1f2a;
   }
 
   .accordion:after {
@@ -187,17 +369,6 @@
 
   .icon {
     margin: 8px;
-  }
-
-  .heroContainer {
-    display: flex;
-    flex-direction: column;
-    margin: 0px;
-  }
-
-  .heroVideo {
-    width: 60lvw;
-    height: 60lvh;
   }
 
   .rowContainer {
@@ -220,27 +391,180 @@
 }
 
 @media screen and (max-width: 600px) {
+  /* HTML tags */
   body {
     background-color: #1a1a20;
     background-image: url(images/UI_Loading_BlueDisc_Lg.png);
     background-repeat: no-repeat;
     background-position: top;
-    background-size: 100lvw auto;
+    background-size: initial;
+    overflow: auto;
   }
 
   h1 {
-    padding: 16px 0px;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0.67em 0;
   }
 
   h2 {
-    padding: 8px 0px;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0.75em 0;
+  }
+
+  h3 {
+    font-size: 1.17em;
+    font-weight: bold;
+    margin: 0.83em 0;
+  }
+
+  h4 {
+    font-size: 1em;
+    font-weight: bold;
+    margin: 1.12em 0;
+  }
+
+  h5 {
+    font-size: 0.83em;
+    font-weight: bold;
+    margin: 1.5em 0;
+  }
+
+  h6 {
+    font-size: 0.75em;
+    font-weight: bold;
+    margin: 1.67em 0;
+  }
+
+  .subtitle {
+    opacity: 75%;
   }
 
   a {
-    font-size: 14px;
+    color: #eee;
+    padding: 14px 16px;
+    font-size: 16px;
   }
 
-  /* Add a black background color to the top navigation */
+  p {
+    color: #eee;
+    font-size: 16px;
+  }
+
+  .button {
+    background-color: #1f1f2a;
+    border: none;
+    border-radius: 8px;
+    color: #eee;
+    padding: 12px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .button:hover {
+    background-color: #2a2a3d;
+    border: none;
+    border-radius: 8px;
+    color: #eee;
+    padding: 12px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .buttonInline {
+    background-color: #1f1f2a;
+    border: none;
+    border-radius: 8px;
+    color: #eee;
+    padding: 6px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .buttonInline:hover {
+    background-color: #2a2a3d;
+    border: none;
+    border-radius: 8px;
+    color: #eee;
+    padding: 6px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .buttonYT {
+    background-color: #ff0000;
+    border: none;
+    border-radius: 8px;
+    color: #eee;
+    padding: 6px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .buttonYT:hover {
+    background-color: #ff3333;
+    border: none;
+    border-radius: 8px;
+    color: #eee;
+    padding: 6px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .buttonTwitch {
+    background-color: #8000ff;
+    border: none;
+    border-radius: 8px;
+    color: #eee;
+    padding: 6px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .buttonTwitch:hover {
+    background-color: #9933ff;
+    border: none;
+    border-radius: 8px;
+    color: #eee;
+    padding: 6px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  /* Topnav Elements */
   .topnav {
     position: sticky;
     top: 0;
@@ -248,7 +572,6 @@
     overflow: hidden;
   }
 
-  /* Style the links inside the navigation bar */
   .topnav a {
     float: left;
     display: block;
@@ -260,52 +583,37 @@
     transition: 0.4s;
   }
 
-  /* Change the color of links on hover */
   .topnav a:hover {
     background-color: #2a2a3d;
     color: #eee;
   }
 
-  /* Add a color to the active/current link */
   .topnav a.selected {
     background-color: #1f1f2a;
   }
 
+  /* Flexbox Containers */
   .container {
     display: flex;
     flex-direction: column;
     width: 100lvw;
-    justify-content: center;
+    justify-content: top;
     align-items: center;
   }
 
-  .containerH {
+  .heroContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100lvw;
+    justify-content: top;
+    align-items: center;
+    padding: 64px 120px;
+  }
+
+  .pageTitle {
     display: flex;
     flex-direction: row;
     width: 100lvw;
-    justify-content: left;
-    align-items: center;
-  }
-
-  .scroll-container {
-    background-color: #17171f;
-    overflow: auto;
-    white-space: nowrap;
-    width: 100%;
-  }
-
-  .scroll-container iframe {
-    border: hidden;
-    border-radius: 10px;
-    overflow: hidden;
-    z-index: 1;
-    margin: 8px;
-  }
-
-  .singleCol {
-    display: flex;
-    flex-direction: column;
-    width: 80lvw;
     justify-content: center;
     align-items: center;
   }
@@ -313,28 +621,71 @@
   .section {
     display: flex;
     flex-direction: column;
-    margin: 24px;
-    padding: 16px;
-    width: 100%;
+    width: 100lvw;
     background-color: #17171f;
-    justify-content: left;
+    justify-content: top;
+    align-items: center;
+  }
+
+  .heroVideoSection {
+    display: flex;
+    flex-direction: column;
+    width: 100lvw;
+    justify-content: top;
+    align-items: center;
+    padding: 0px 0px 40px;
+  }
+
+  .sectionHeader {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 18px;
+    width: 90lvw;
+    align-items: left;
+  }
+
+  /* Components */
+  .scroll-container {
+    background-color: #17171f;
+    overflow: auto;
+    white-space: nowrap;
+    width: 90lvw;
+  }
+
+  .scroll-container iframe {
+    border: hidden;
+    border-radius: 10px;
+    z-index: 1;
+    margin: 0px 8px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .heroVideo {
+    width: 90lvw;
+    height: 50.625lvw;
+    border: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
   }
 
   .wrapper {
     padding: 16px;
-    width: 80lvw;
+    width: 60lvw;
   }
 
   .clanWrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     width: 80lvw;
   }
 
   .clanImg {
-    width: 50%;
+    width: 30%;
     height: 50%;
+    margin: 8px;
   }
 
   .clanDetails {
@@ -344,7 +695,7 @@
 
   /* Style the buttons that are used to open and close the accordion panel */
   .accordion {
-    background-color: #1f1f2a;
+    background-color: #17171f;
     color: #eee;
     cursor: pointer;
     padding: 18px;
@@ -361,7 +712,7 @@
 
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .accordion:hover {
-    background-color: #17171f;
+    background-color: #1f1f2a;
   }
 
   .accordion:after {
@@ -401,17 +752,6 @@
 
   .icon {
     margin: 8px;
-  }
-
-  .heroContainer {
-    display: flex;
-    flex-direction: column;
-    margin: 0px;
-  }
-
-  .heroVideo {
-    width: 60lvw;
-    height: 60lvh;
   }
 
   .rowContainer {
